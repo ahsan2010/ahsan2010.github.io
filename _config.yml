@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ahasanuzzaman"
+title                    : "Md Ahasanuzzaman"
 title_separator          : "-"
-name                     : &name "Ahasanuzzaman"
+name                     : &name "Md Ahasanuzzaman"
 description              : &description "Postdoc in Political Science"
 url                      : https://ahsan2010.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -85,7 +85,7 @@ author:
   name             : "Md Ahasanuzzaman"
   avatar           : "profile.png"
   bio              : "Graduate Research Assistant"
-  location         : "SAIL Lab, Queen's University, Kingston, ON, Canada"
+  location         : "Kingston, ON, Canada"
   employer         :
   pubmed           :
   orcid            : "https://orcid.org/0000-0002-3709-2741"

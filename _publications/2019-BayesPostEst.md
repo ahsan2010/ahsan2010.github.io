@@ -1,10 +1,10 @@
 ---
-title: "BayesPostEst: An R Package to Generate Postestimation Quantities for Bayesian MCMC Estimation"
+title: "Studying Ad Library Integration Strategies of Top Free-to-Download Apps"
 collection: publications
 permalink: /publication/2019-bayespostest
-date: 2019-10-01
-venue: 'Journal of Open Source Software'
-paperurl: '/files/pdf/research/BayesPostEst.pdf'
-link: 'https://doi.org/10.21105/joss.01722'
-citation: 'Scogin, Shana, Johannes Karreth, Andreas Beger, and Rob Williams. 2019. &quot;BayesPostEst: An R Package to Generate Postestimation Quantities for Bayesian MCMC Estimation.&quot; <i>Journal of Open Source Software</i> 4(42): 1722. doi:10.21105/joss.01722'
+date: 2020-04-01
+venue: 'IEEE Transactions on Software Engineering'
+paperurl: 'https://sail.cs.queensu.ca/data/pdfs/TSE2020_StudyingAdLibraryIntegrationStrategiesOfTopFreeToDownloadApps.pdf'
+link: 'https://ieeexplore.ieee.org/document/9052472'
+citation: 'Md Ahasanuzzaman, Safwat Hassan, Ahmed E Hassan. IEEE Transactions on SoftwareEngineering (TSE), 2020'
 ---

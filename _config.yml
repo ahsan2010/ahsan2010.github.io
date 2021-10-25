@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Md Ahasanuzzaman"
+title                    : "Ahasanuzzaman"
 title_separator          : "-"
-name                     : &name "Md Ahasanuzzaman"
+name                     : &name "Ahasanuzzaman"
 description              : &description "Postdoc in Political Science"
 url                      : https://ahsan2010.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

@@ -1,5 +1,5 @@
 ---
-title: "Target coverage through Distributed Clustering in Directional Sensor Networks"
+title: "[P2] Target coverage through Distributed Clustering in Directional Sensor Networks"
 collection: publications
 permalink: /publication/2015-target-coverage-EURASIP
 date: 2015-03-27

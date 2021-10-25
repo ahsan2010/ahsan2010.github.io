@@ -1,5 +1,5 @@
 ---
-title: "A longitudinal study of popular ad libraries in the Google Play Store"
+title: "[P6] A longitudinal study of popular ad libraries in the Google Play Store"
 collection: publications
 permalink: /publication/2020-ad-provider-EMSE
 date: 2020-01-08

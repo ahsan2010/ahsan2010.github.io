@@ -1,5 +1,5 @@
 ---
-title: "A Distributed Clustering Algorithm for Target Coverage in Directional Sensor Net-works."
+title: "[P1] A Distributed Clustering Algorithm for Target Coverage in Directional Sensor Net-works."
 collection: publications
 permalink: /publication/2014-target-coverage-APWIMOB
 date: 2014-03-27

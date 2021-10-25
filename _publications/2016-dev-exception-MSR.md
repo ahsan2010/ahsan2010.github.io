@@ -1,5 +1,5 @@
 ---
-title: "How developers use exception handling in Java?"
+title: "[P3] How developers use exception handling in Java?"
 collection: publications
 permalink: /publication/2016-dev-exception-MSR
 date: 2016-03-27

@@ -1,5 +1,5 @@
 ---
-title: "CAPS: a supervised technique for classifying Stack Overflow posts concerning API issues"
+title: "[P5] CAPS: a supervised technique for classifying Stack Overflow posts concerning API issues"
 collection: publications
 permalink: /publication/20219-so-issue-classify-EMSE
 date: 2019-06-20

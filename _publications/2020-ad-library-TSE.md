@@ -1,5 +1,5 @@
 ---
-title: "Studying Ad Library Integration Strategies of Top Free-to-Download Apps"
+title: "[P7] Studying Ad Library Integration Strategies of Top Free-to-Download Apps"
 collection: publications
 permalink: /publication/2020-ad-library-TSE
 date: 2020-04-01

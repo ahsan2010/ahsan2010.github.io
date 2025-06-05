@@ -6,28 +6,7 @@ author_profile: true
 header:
   og_image: "research/ecdf.png"
 ---
-
-My research falls into two main areas: understanding the influence of geography
-on actor behavior before, during, and after civil conflict, and developing new
-tools to improve the study of institutions (both formal and informal) in peace
-and conflict. One strand of research in this first area explores how the
-territories that ethnic groups inhabit shape rebel group formation and condition
-their relationship with the state. My interest in geography also informs
-projects on active conflicts including the targeting of UN peacekeepers by
-insurgent groups, civilian victimization after rebel territorial conquest, and
-communal violence in fragile settings.
-
-My other main research agenda uses advanced methods to develop new measures of
-institutions. One project uses Bayesian item response theory to measure the
-strength of peace agreements as a latent variable and free researchers from
-post-treatment bias caused by using the duration of agreements as a proxy for
-their strength. In others, I apply unsupervised learning techniques to over a
-billion observations of product-level international trade data to measure
-economic interdependence and illicit economic exchange.
-
-In a new avenue of research, I leverage social media data to explore
-participation in extremist movements across multiple contexts, gaining insight
-into the early stages of radicalization.
+Albert Szent-Gyorgyi, a Nobel laureate and renowned scientist, famously remarked, “Research is to see what everybody else has seen, and to think what nobody else has thought.” Inspired by this perspective, my research focuses on uncovering novel insights and innovative solutions to critically challenged and widely recognized problems in software engineering. Specifically, I am dedicated to advancing the productivity of software practitioners through the automation of various software development tasks. One aspect of my research revolves around developing methodologies and tools that harness software artifacts, data analytics and AI to support various software maintenance processes – such as recommending appropriate code reviewers and predicting defect-prone modules – thereby alleviating the workload of practitioners and improving overall software quality. Through the integration of advanced machine learning techniques, natural language processing (NLP), and rigorous empirical analysis of large-scale data and mining software repositories, I aim to address critical challenges in developer engagement, software quality assurance, issue management, and empirical ecosystem analysis.
 
 <nbsp>
 

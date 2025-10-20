@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Md Ahasanuzzaman"
 title_separator          : "-"
 name                     : &name "Md Ahasanuzzaman"
-description              : &description "Postdoc in Political Science"
+description              : &description "Graduate Research Assistant, SAIL, Queen's University"
 url                      : https://ahsan2010.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ahsan2010/ahsan2010.github.io"
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Md Ahasanuzzaman"
   avatar           : "profile.png"
-  bio              : "Graduate Research Assistant"
+  bio              : "Graduate Research Assistant, SAIL, Queen's University"
   location         : "Kingston, ON, Canada"
   employer         :
   pubmed           :

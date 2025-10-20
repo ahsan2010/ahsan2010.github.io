@@ -2,6 +2,8 @@
 permalink: /teaching/
 title: "Teaching"
 ---
+
+<div style="text-align: justify;">
 I have always been deeply passionate about teaching, as I consider it one of the most fulfilling and
 rewarding aspects of an academic career. I believe that teaching is not just the transfer of knowledge,
 but the cultivation of curiosity, critical thinking, and lifelong learning. Drawing from my own
@@ -12,14 +14,18 @@ improvement—not only for students, but also for the educator. This commitment 
 an enriched, inclusive, and dynamic learning environment where the pursuit of knowledge extends
 far beyond the classroom. In what follows, I outline my teaching experience, teaching philosophy,
 methods, and commitment to supporting student success inside and beyond the classroom.
+</div>
 
 ## 🧑‍🏫 Teaching Experience
 
+<div style="text-align: justify;">
 My teaching journey began during the third year of my undergraduate studies, when I worked as a private tutor over the summer break. I had the opportunity to support a first-year undergraduate student from the University of Toronto, Canada. That early experience sparked a passion for sharing knowledge and set me on a path toward a lifelong commitment to education.  
+<br/>
 
 Since then, I have been actively involved in teaching, tutoring, and other learning activities in both Bangladesh and Canada. I have taught and served as a teaching assistant for a wide range of undergraduate computer science courses—from introductory programming to advanced theory—across class sizes ranging from 50 to over 180 students. This breadth of experience has equipped me to support learners at various academic levels and to adapt my teaching strategies effectively to diverse course content and classroom settings.  
-
+<br/>
 The table below summarizes my teaching experience:
+</div>
 
 | **Course Name** | **Institution** | **Role** | **Term(s)** |
 |------------------|-----------------|-----------|--------------|

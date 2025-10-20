@@ -1,5 +1,5 @@
 ---
-title: "Conflict preemption"
+title: "Knowledge Units of Programming Languages"
 layout: single-portfolio
 excerpt: "<img src='/images/research/epr.png' alt=''>"
 collection: research
@@ -8,17 +8,66 @@ header:
   og_image: "research/epr.png"
 ---
 
-In this research I ask why some rebel groups fight for secession and independence, while others are willing to use violence to secure more autonomy and self-governance within an existing state. I argue that because rebel groups are strategic actors, they realize that military victory or plebiscite is not the end of their political struggle; if they gain independence, they must then create a new state. States are territorial entities, and so the trajectory of any new state will be greatly influenced by the resources and challenges its territory holds. Knowing this, rebel groups whose territory is more conducive to governance and administration will push for independence, while groups whose territory is less suited will fight for autonomy within the state. However, governments are aware of which groups inhabit territories most suitable to secession and employ various measures to try and stop these conflicts before they can begin, such as China’s pervasive electronic tracking of Uyghur citizens in Xinjiang.
+During my PhD I introduce the notion of Knowledge Units (KUs) - cohesive sets of key capabilities that are offered by one or more building blocks of a programming language. Unlike traditional code metrics such as lines of code, cyclomatic complexity, and the CK suite) that only offer language-agnostic insights into size, complexity, and structure, KUs aim to capture language-specific traits that influence how software systems are developed and maintained. For instance, using the Java language’s concurrency constructs and Application Programming Interfaces (APIs), a developer can create worker threads to execute tasks concurrently. Therefore, it is reasonable to assume that Java has a Concurrency KU, which includes a cohesive set of key concurrent processing capabilities offered by the Java Concurrency constructs/APIs (building block). 
 
-To test these arguments, I focus on rebel movements tied to ethnic groups with defined homelands. By doing so, I am able to exploit geospatial data on population and government activity to compare the governability of subnational territories cross-nationally. I also explore the temporal dynamics of these phenomena in smaller scale studies focusing on different government preemption tactics. I explore how states actually conduct this surveillance of their populations, using an agent-based model to predict when these monitoring efforts are likely to fail. Such simulation based approaches help us understand the role that information and communication technology can play in helping governments main control of restive regions.
+Based on the assumption that expert programmers should master the KUs required for the development
+task at hand, in my PhD, I conceptualize and operationalize KUs of programming languages and enhance various important software engineering tasks by leveraging KUs. In particular, I explore
+KUs along four perspectives:
+
+---
+
+### 🧩 1. Recommending Code Reviewers in Pull Requests — *KUREC Framework*
+- Developed **KUREC**, an effective reviewer recommender system that analyzes developers’ programming language expertise in both code contributions and prior reviews through the lens of KUs.  
+- Evaluated KUREC on **10 large-scale Java projects** (290K commits and 65K PRs) from GitHub.  
+- KUREC **outperforms seven state-of-the-art recommenders** and shows stable, reliable performance across projects.  
+- Enhanced KUREC by integrating it with other recommenders and developing three new variations that further **balance reviewer workload** while maintaining high accuracy.  
+- Published in *Empirical Software Engineering (EMSE)*, the top journal in empirical software research.
+
+---
+
+### 👥 2. Predicting Long-Time Contributors (LTCs) in OSS Projects — *KULTC Model*
+- Proposed **KULTC**, a prediction model that leverages KU-based features along five distinct dimensions to identify long-time contributors in open-source software (OSS) projects.  
+- Analyzed **1.7M commits and 168K PRs** from **4.3K active Java projects** to detect and quantify KUs.  
+- Empirical results show that KULTC **outperforms baseline models** and effectively predicts LTCs during their early involvement in projects.  
+- Local interpretability analysis revealed that **KU-based expertise is the most influential factor** in predicting long-term engagement.  
+- Published in *Empirical Software Engineering (EMSE)*.
+
+---
+
+### 🐞 3. Predicting Post-Release Defects — *KUM Model*
+- Designed **KUM**, a defect prediction model using **28 KU-based features**, providing a language-aware approach to software quality prediction.  
+- Demonstrated that KUs offer **significant predictive power**, outperforming traditional metric groups (product, process, and ownership metrics).  
+- Found that KUs offer a **complementary perspective** to existing metrics, improving both recall and interpretability in defect prediction.  
+- This article is **currently under review** in *Empirical Software Engineering (EMSE)*.
+
+---
+
+### 🤖 4. Evaluating Large Language Models (LLMs) through KUs
+- Addressed the gap in benchmark datasets (e.g., *HumanEval*, *MBPP*) which often lack equitable coverage of programming-language KUs.  
+- Developed an **LLM-based framework** that:
+  - Automatically detects KUs in any programming language,  
+  - Generates **KU-specific code generation tasks** to enhance benchmark coverage, and  
+  - Evaluates **LLMs’ strengths and weaknesses** across specific KUs.  
+- Comparative analysis on real-world projects and benchmark datasets demonstrates **improved representativeness and coverage** in LLM evaluation.  
+- This work is being finalized for submission to *IEEE Transactions on Software Engineering (TSE)*, the #1 journal in the software engineering field.
+
+---
 
 ## Article
 
-Rob Williams. "Turning the Lights on to Keep Them in the Fold: How Governments Preempt Secession Attempts." *Conflict management and Peace Science*.
+Ahasanuzzaman, M., Oliva, G. A., & Hassan, A. E. (2024). **Using knowledge units of programming languages to recommend reviewers for pull requests: an empirical study**. Empirical Software Engineering (EMSE), 29(1), 33.
 
-> There are many regions that meet the necessary conditions for sovereign governance in the world, but few secessionist conflicts. I argue that this relative paucity of secessionist violence is the result of government preemption of potential secessionist movements. Using cross-national geospatial data from 1992 to 2013, I find that governments invest more, measured via nighttime light emissions, in more secession-prone regions. The same factors that make territory attractive for secession, such as large populations and international borders, also make governments willing to work to retain control of that territory, contributing to the scarcity of separatist civil conflicts.
+>Code review is a key element of quality assurance in software development. Determining the right reviewer for a given code change requires understanding the characteristics of the changed code, identifying the skills of each potential reviewer (expertise profile), and finding a good match between the two. To facilitate this task, we design a code reviewer recommender that operates on the Knowledge Units (KUs) of a programming language. We define a KU as a cohesive set of key capabilities that are offered by one or more building blocks of a given programming language. We operationalize our KUs using certification exams for the Java programming language.
 
-[Article](https://doi.org/10.1177/07388942211015242){: .btn--research} [Preprint](/files/pdf/research/Turning the Lights on.pdf){: .btn--research} [Supplemental Information](/files/pdf/research/Turning the Lights on SI.pdf){: .btn--research} [Replication Archive](https://journals.sagepub.com/doi/suppl/10.1177/07388942211015242){: .btn--research} [GitHub Repo](https://github.com/jayrobwilliams/conflict-preemption){: .btn--research}
+We detect KUs from ten actively maintained Java projects from GitHub, spanning 290K commits and 65K pull requests (PRs). Next, we generate developer expertise profiles based on the detected KUs. Finally, these KU-based expertise profiles are used to build a code reviewer recommender (KUREC). The key assumption of KUREC is that the code reviewers of a given PR should be experts in the KUs that appear in the changed files of that PR.
+
+In RQ1, we compare KUREC’s performance to that of four baseline recommenders: (i) a commit-frequency-based recommender (CF), (ii) a review-frequency-based recommender (RF), (iii) a modification-expertise-based recommender (ER), and (iv) a review-history-based recommender (CHREV). We observe that KUREC performs as well as the top-performing baseline recommender (RF). From a practical standpoint, we highlight that KUREC’s performance is more stable (lower interquartile range) than that of RF, thus making it more consistent and potentially more trustworthy.
+
+Next, in RQ2, we design three new recommenders by combining KUREC with our baseline recommenders. These new combined recommenders outperform both KUREC and the individual baselines. Finally, in RQ3, we evaluate how reasonable the recommendations from KUREC and the combined recommenders are when those deviate from the ground truth. KUREC is the recommender with the highest percentage of reasonable recommendations (63.4%). One of our combined recommenders (AD_FREQ) strikes the best balance between sticking to the ground truth (best recommender from RQ2) and issuing reasonable recommendations when those deviate from that ground truth (59.4% reasonable recommendations, third best in this RQ).
+
+Taken together, the results from all RQs show that KUREC and AD_FREQ are overall superior to the baseline recommenders that we studied. Future work in this area should therefore (i) consider KU-based recommenders as baselines and (ii) experiment with combined recommenders.
+
+[Article](https://link.springer.com/article/10.1007/s10664-023-10421-9){: .btn--research} [Preprint](https://arxiv.org/pdf/2305.05654){: .btn--research} [Supplemental Information](/files/pdf/research/Turning the Lights on SI.pdf){: .btn--research} [Replication Archive](https://drive.google.com/drive/folders/1bSC9iRtjKjMTRa9hiyECijgABKGfpyT4){: .btn--research}
 
 ## Manuscript in preparation
 

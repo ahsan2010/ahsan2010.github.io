@@ -1,5 +1,5 @@
 ---
-title: "Conflict event data"
+title: "Mobile App Ecosystem"
 layout: single-portfolio
 excerpt: "<img src='/images/research/mobile_apps.jpg' alt=''>"
 collection: research

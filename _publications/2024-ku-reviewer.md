@@ -2,7 +2,7 @@
 title: "[P10] Using knowledge units of programming languages to recommend reviewers for pull requests: an empirical study."
 collection: publications
 permalink: /publication/2024-ku-reviewer
-date: 2024
+date: 2024-01-01
 venue: 'Empirical Software Engineering'
 paperurl: 'https://arxiv.org/pdf/2305.05654'
 link: 'https://link.springer.com/article/10.1007/s10664-023-10421-9'

@@ -18,25 +18,60 @@ My broad research works can be categorized into these three following areas:
 {% include base_path %}
 
 {% assign ordered_pages = site.research | sort:"order_number" %}
+{% assign research_items = ordered_pages | slice: 0, 3 %}
 
-<div class="research-three-col">
-  {% for post in ordered_pages %}
-    <div class="research-card">
+<div class="research-column">
+  {% for post in research_items %}
+    <div class="research-item">
       {% include archive-single.html type="grid" %}
     </div>
   {% endfor %}
 </div>
 
 <style>
-.research-three-col {
+.research-column {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
-.research-card {
-  border: 1px solid #eee;
-  padding: 10px;
-  border-radius: 8px;
-  background-color: #fff;
+
+.research-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.research-item h2,
+.research-item h3,
+.research-item h4 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.research-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px auto 15px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .research-column {
+    padding: 10px;
+  }
+  .research-item {
+    padding: 15px;
+  }
 }
 </style>

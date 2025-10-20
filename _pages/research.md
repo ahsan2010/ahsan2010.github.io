@@ -19,6 +19,24 @@ My broad research works can be categorized into these three following areas:
 
 {% assign ordered_pages = site.research | sort:"order_number" %}
 
-{% for post in ordered_pages %}
-  {% include archive-single.html type="grid" %}
-{% endfor %}
+<div class="research-three-col">
+  {% for post in ordered_pages %}
+    <div class="research-card">
+      {% include archive-single.html type="grid" %}
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.research-three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.research-card {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+</style>

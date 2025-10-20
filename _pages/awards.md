@@ -1,6 +1,8 @@
 ---
+layout: single
+title: "Awards and Scholarships"
 permalink: /awards/
-title: "Awards"
+author_profile: true
 ---
 
 ## 🏆 Awards and Scholarships

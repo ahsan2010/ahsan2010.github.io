@@ -32,46 +32,58 @@ My broad research works can be categorized into these three following areas:
 .research-column {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  gap: 36px;
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .research-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertically center content */
+  align-items: center;       /* horizontally center content */
+  text-align: center;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 30px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
+  min-height: 320px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .research-item h2,
 .research-item h3,
 .research-item h4 {
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: 1.25rem;
   line-height: 1.4;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  margin-bottom: 12px;
-  text-align: center;
+  margin-bottom: 15px;
 }
 
 .research-item img {
-  max-width: 100%;
+  max-width: 150px;
   height: auto;
-  border-radius: 6px;
-  margin: 10px auto 15px;
+  border-radius: 8px;
+  margin: 10px 0 15px;
   display: block;
 }
 
 @media (max-width: 768px) {
-  .research-column {
-    padding: 10px;
-  }
   .research-item {
-    padding: 15px;
+    padding: 20px;
+    min-height: 280px;
   }
 }
 </style>

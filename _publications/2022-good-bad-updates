@@ -1,0 +1,12 @@
+---
+title: "[P9] Tracking bad updates in mobile apps: A search-based approach"
+collection: publications
+permalink: /publication/2022-good-bad-updates
+date: 2022
+venue: 'Empirical Software Engineering'
+paperurl: 'https://mkaouer.net/publication/saidani-2022-tracking/saidani-2022-tracking.pdf'
+link: 'https://link.springer.com/article/10.1007/s10664-022-10125-6'
+#code: 'https://journals.sagepub.com/doi/suppl/10.1177/07388942211015242'
+#github: 'https://github.com/jayrobwilliams/conflict-preemption'
+citation: 'Saidani, I., Ouni, A., Ahasanuzzaman, M., Hassan, S., Mkaouer, M. W., & Hassan, A. E.. Empirical Software Engineering, 27(4), 81, 2022'
+---

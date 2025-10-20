@@ -1,5 +1,5 @@
 ---
-title: "Knowledge Units of Programming Languages"
+title: "Knowledge Units of Programming Languages -- A new perspective for analyzing software systems"
 layout: single-portfolio
 excerpt: "<img src='/images/research/ku.png' alt=''>"
 collection: research

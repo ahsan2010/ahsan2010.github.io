@@ -1,11 +1,11 @@
 ---
-title: "Mobile App Ecosystem"
+title: "Empowering developers with data-driven insights from mobile app ecosystem"
 layout: single-portfolio
-excerpt: "<img src='/images/research/mobile_apps.jpg' alt=''>"
+excerpt: "<img src='/images/research/mobile_app_3.png' alt=''>"
 collection: research
 order_number: 20
 header: 
-  og_image: "research/mobile_apps.jpg"
+  og_image: "research/mobile_app_3.png"
 ---
 
 <div align="justify">

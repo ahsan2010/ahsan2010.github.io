@@ -9,6 +9,8 @@ author_profile: true
 
 | **Award Name** | **Level / Institution** | **Duration** | **Details** |
 |------------------|--------------------------|---------------|--------------|
+| **Graduate Research Fellowship** | Institutional – Queen’s University, Canada | Sep. 2019 – Dec. 2025 | Awarded a Graduate Research Fellowship totaling $140,000 CAD for graduate studies. |
+| **ACM SIGSOFT CAPS Travel Grant ICSE 2025** | International – ACM Association | Mar. 2025 | $780 CAD awarded for attending ICSE 2025 in Ottawa, Canada. |
 | **Duncan and Urlla Carmichael Scholarship** | Institutional – Queen’s University, Canada | Sep. 2021 – Aug. 2022 | $10,000 CAD scholarship awarded for outstanding academic achievement and consistent performance during graduate studies. |
 | **ACM SIGSOFT Travel Grant (ICSE 2019 SMEW)** | International – ACM Association | Oct. 2019 | $1,000 CAD awarded for attending ICSE 2019 student mentorship program in Montreal, Canada. |
 | **Graduate Research Fellowship** | Institutional – Queen’s University, Canada | Sep. 2017 – Aug. 2019 | Awarded a Graduate Research Fellowship totaling $50,000 CAD for graduate studies. |

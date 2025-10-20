@@ -1,11 +1,11 @@
 ---
 title: "Knowledge Units of Programming Languages"
 layout: single-portfolio
-excerpt: "<img src='/images/research/epr.png' alt=''>"
+excerpt: "<img src='/images/research/ku.png' alt=''>"
 collection: research
 order_number: 10
 header: 
-  og_image: "research/epr.png"
+  og_image: "research/ku.png"
 ---
 
 <div align="justify">

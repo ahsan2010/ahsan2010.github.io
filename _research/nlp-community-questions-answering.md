@@ -8,7 +8,7 @@ header:
   og_image: "research/NLP-image-scaled-1-1.png"
 ---
 
- I also collaborated with researchers in University of Saskatchewan, Canada. In particular,
+I collaborated with researchers in University of Saskatchewan, Canada. In particular,
 I investigated how issues related to Application Programming Interfaces (APIs) are discussed in
 Stack Overflow (SO) posts. SO Posts about API-related issues are valuable to API designers for
 understanding problems and user requirements. However, their unstructured format and the presence

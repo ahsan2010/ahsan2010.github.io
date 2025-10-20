@@ -1,0 +1,82 @@
+Title: Predicting long time contributors with knowledge units of programming languages: an empirical study
+
+[Replication Instructions]
+
+1) Extracting KUs from Java source code:
+
+	- Configure all the paths in util/ConstantUtil.java
+
+	- Run the main script for extracting KUs from the commits of selected proejcts.
+	  
+	  Main script  : MasterRepositoryReleaseLevelCommitAnalyzerOtherProject.java
+	  
+	  Detailed Info: This is thread implemented to speed up the computation of KU extraction.
+	  				 Set up the number of threads "numberOfThreads" (default is 30)
+	  				 This script calls the ChildRepositoryReleaseLevelCommitAnalyzerOtherProject.java that mainly handles all the job.
+	  				 When all the job execution is done, all KU extracted for every file in a commit will be saved in the desinated location.
+
+2) Generate KU-based feature for different profile dimension:
+	
+	- Configure all the paths in util/ConstantUtil.java
+	- Now, run the following scripts to generate vector of KUs for each dimension:
+
+		Studied Project Developaer Expertise Dimension: studiedProjects/KUFeatureExtractorMaster.java
+		Other Project Developer Expertise Dimension:	otherProjects/KUFeatureExtractorMaster.java
+		Collaborator Expertise Dimension:				collaborator/KUFeatureExtractorMaster.java
+	    Studied Project Characteristics Dimension:		projectdim/ProjectDimKUAnalyzer.java
+	    Other Project Characteristics Dimension:		projectdim/OtherProjDimKUAnalyzer.java
+
+	- Output: These scripts will generate csv files containing the feature vector for each dimension.
+
+
+3) Construct studied models including KULTC and Baseline model
+
+	 - We built our studied models using Python.
+	 - Required packages: sklearn, numpy, pandas, xgboost, imblearn, lightgbm, pickle and multiprocessing
+
+	 - Run the script to build the studied models:
+
+	 	Main script: ltc_KU/ku-model-variation/kultc_feature_variation.py
+
+	 	Detailed Info: 
+	 			* Create a list of the models that we want to build
+	 			* Mapping the correpsonding feature dimension will be done automatically
+	 			* Set up the required information (e.g., boot limit)
+	 			* This script will first run the AutoSpearman to filter out all the highly correlated features. 
+	 			* Then the script will built model and save the model result into the desired location
+
+
+4) Hyper-parameter tuning analysis:
+	
+	- Run the following script to built models varying different parameters and classification algorithms.
+
+		Script: hyper-parameter-analysis/hyper-parameter-tuning-analyzer.py
+
+
+5) Rank model based on their performance (AUC)
+	
+	- We apply Scott-Knott ESD method to rank the models based on their performance
+    
+	Script: generate sk-rank input: ltc-model-analysis/model-sk-rank-analysis.py
+			Apply sk-rank: ku-model-variation/sk-rank-models.py
+
+
+6) Model feature importance analysis:
+
+    - Running the SHAP Analysis
+		- We apply the SHAP analysis for our model's feature importance analysis. SHAP is a robust, flexible and widely used local (i.e., instances based) model interpreation method.
+
+		- Needed package: shap
+		- Script: ltc-model-analysis/shap_feature_importance_analysis_trained_all_data_single_model.py
+		
+		Run this script to generate shapley values for each feature of every instance in the dataset.
+		The script will then save all the raw values generated from 
+
+	- Analyze the SHAP values:
+
+		Script: ku-model-variation/full_model_feature_shap.py
+
+	- Scott-Knot test to rank the feature based on their importance for whole model
+
+		Script: Call the method: generate_sk_rank_input_data() in shap_feature_importance_analysis_trained_all_data_single_model.py
+
